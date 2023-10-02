@@ -1,3 +1,5 @@
+import Statistics from './Statistics.jsx';
+
 export const App = () => {
   return (
     <div
@@ -7,10 +9,16 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <Statistics
+        good={1}
+        neutral={1}
+        bad={1}
+        total={3}
+        positivePercentage={2}
+      ></Statistics>
     </div>
   );
 };
