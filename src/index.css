@@ -77,15 +77,15 @@ p {
 }
 
 .btn-good {
-  background-color: #1971c2;
+  background-color: #2f9e44;
 }
 
 .btn-neutral {
-  background-color: #fab005;
+  background-color: #f08c00;
 }
 
 .btn-bad {
-  background-color: #f03e3e;
+  background-color: #e03131;
 }
 
 .btn:active {
