@@ -1,15 +1,94 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
+/* bring in normalize.css styles */
 
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #f8f9fa;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  width: 420px;
+  background-color: #dee2e6;
+  padding: 24px 48px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  color: #050505;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.28;
+  text-transform: uppercase;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-color: red;
+  padding: 8px 24px;
+  border-radius: 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+  color: #F8F8F8;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn-good {
+  background-color: #1971c2;
+}
+
+.btn-neutral {
+  background-color: #fab005;
+}
+
+.btn-bad {
+  background-color: #f03e3e;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
 }
