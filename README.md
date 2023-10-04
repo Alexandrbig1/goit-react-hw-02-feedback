@@ -5,7 +5,7 @@ doing homework while studying in bootcamp @GoIT on Fullstack developer course
 
 ## Project Specifications:
 
-React module(homework2)
+React module(states/event)
 
 ## Languages and Tools:
 <div align="center">  
