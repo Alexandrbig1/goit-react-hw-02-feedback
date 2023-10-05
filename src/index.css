@@ -78,14 +78,31 @@ p {
 
 .btn-good {
   background-color: #2f9e44;
+  transition: 0.3s;
+}
+
+.btn-good:hover {
+  background-color: #34b04b;
+  transition: 0.4s ease-in-out;
 }
 
 .btn-neutral {
-  background-color: #f08c00;
+  background-color: #fb9301;
+}
+
+.btn-neutral:hover {
+  background-color: #fc9d19;
+  transition: 0.4s ease-in-out;
 }
 
 .btn-bad {
   background-color: #e03131;
+}
+
+.btn-bad:hover {
+  background-color: #f24343;
+  transition: 0.4s ease-in-out;
+
 }
 
 .btn:active {
