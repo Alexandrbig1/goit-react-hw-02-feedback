@@ -1,19 +1,29 @@
-import React from 'react';
-
-const FeedbackOptions = () => {
+function FeedbackOptions({ onClickButtons }) {
   return (
-    <div style={{ display: 'block', marginBottom: '20px' }}>
-      {/* <button type="button" onClick={1}>
+    <div className="btn-wrapper">
+      <button
+        className="btn btn-good"
+        type="button"
+        onClick={e => onClickButtons(e.target.textContent)}
+      >
         Good
       </button>
-      <button type="button" onClick={1}>
+      <button
+        className="btn btn-neutral"
+        type="button"
+        onClick={e => onClickButtons(e.target.textContent)}
+      >
         Neutral
       </button>
-      <button type="button" onClick={1}>
+      <button
+        className="btn btn-bad"
+        type="button"
+        onClick={e => onClickButtons(e.target.textContent)}
+      >
         Bad
-      </button> */}
+      </button>
     </div>
   );
-};
+}
 
 export default FeedbackOptions;
